@@ -18,9 +18,13 @@ Les contrats sont dans le dossier smartContract/contracts
 # Tester le contrat sur remix 
 
 - Rendez-vous sur https://remix.ethereum.org/
-- Ajouter le contrat Voting.sol dans le dossier contracts de remix 
-- Compiler Voting.sol dans solitdity compiler de remix
-- Deployer et tester le contrat dans la rubrique Deploy and run transaction de remix
+- Ajouter les contrats Voting.sol et VotingToken.sol dans le dossier contracts de remix 
+- Compiler VotingToken.sol et Voting.sol dans solidity compiler de remix
+- Deployer et tester les contrats dans la rubrique Deploy and run transaction de remix
+
+Note : Il faut déployer avant VotingToken car le contrat Voting a besoin de l'adresse de VotingToken au déploiement. </br>
+Il faudra également approuver le contrat Voting dans VotingToken (après avoir déployé les deux contrats)
+![Approve](smartContract/ressources//images/approve.PNG)
 
 
 # Fonctionnalités de base 
