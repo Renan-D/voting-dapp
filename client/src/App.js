@@ -6,11 +6,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import VotingApp from './components/VotingApp';
 
 function App() {
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const signer = provider.getSigner();
+
   return (
       <Router>
         <Switch>
           <Route exact path="/" component={VotingApp} />
-          {/* Ajoutez d'autres routes ici pour la gestion de l'administration, l'affichage des résultats, etc. */}
         </Switch>
       </Router>
   );
