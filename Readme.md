@@ -25,59 +25,59 @@ Les contrats sont dans le dossier smartContract/contracts
 # Fonctionnalités de base 
 
 - Celui qui déploie le contrat devient Owner du contrat<br/>
-![Deploy](ressources/images/deploy.PNG)
+![Deploy](smartContract/ressources//images/deploy.PNG)
 
 - Inscription des électeurs : L'administrateur (Owner) peut inscrire les électeurs sur une liste blanche en utilisant leur adresse Ethereum.<br/>
-![Register voter](ressources/images/registerVoter.PNG)
+![Register voter](smartContract/ressources//images/registerVoter.PNG)
 
 - Session d'enregistrement des propositions : L'administrateur peut démarrer une session d'enregistrement des propositions.<br/>
-![Start proposal](ressources/images/StartProposal.PNG)
+![Start proposal](smartContract/ressources//images/StartProposal.PNG)
 
 - Enregistrement des propositions : Les électeurs inscrits peuvent soumettre leurs propositions pendant la session d'enregistrement des propositions.<br/>
-![Submit proposal](ressources/images/submitProposal.PNG)
+![Submit proposal](smartContract/ressources//images/submitProposal.PNG)
 
 - Clôture de la session d'enregistrement des propositions : L'administrateur peut mettre fin à la session d'enregistrement des propositions.<br/>
-![End proposal](ressources/images/endProposal.PNG)
+![End proposal](smartContract/ressources//images/endProposal.PNG)
 
 - Session de vote : L'administrateur peut lancer une session de vote.<br/>
-![Start voting](ressources/images/startVoting.PNG)
+![Start voting](smartContract/ressources//images/startVoting.PNG)
 
 - Consultation des propositions : Les électeurs peuvent consulter les propositions et leur ID qui seront nécesaires pour le vote (Par exemple, ici PHP : 0 , Java : 1)<br/>
-![Get all proposals](ressources/images/getAllProposal.PNG)
+![Get all proposals](smartContract/ressources//images/getAllProposal.PNG)
   
 - Vote : Les électeurs inscrits peuvent voter pour leurs propositions préférées. (avec l'id de la proposition donc ici l'électeur vote pour PHP)<br/>
-![Vote](ressources/images/vote.PNG)
+![Vote](smartContract/ressources//images/vote.PNG)
 
 - Clôture de la session de vote : L'administrateur peut mettre fin à la session de vote.<br/>
-![End Voting](ressources/images/endVoting.PNG)
+![End Voting](smartContract/ressources//images/endVoting.PNG)
 
 - Comptabilisation des votes : L'administrateur peut comptabiliser les votes pour déterminer la proposition gagnante.<br/>
-![Tally votes](ressources/images/tallyVote.PNG)
+![Tally votes](smartContract/ressources//images/tallyVote.PNG)
 
 - Consultation des résultats : Tout le monde peut consulter la proposition gagnante (Son ID ou alors sa description).<br/>
-![Winning proposal ID](ressources/images/winningProposalID.PNG)
-![Winning proposal description](ressources/images/winningProposalDescription.PNG)
+![Winning proposal ID](smartContract/ressources//images/winningProposalID.PNG)
+![Winning proposal description](smartContract/ressources//images/winningProposalDescription.PNG)
 
 - Chaque votant peut consulter les votes des autres : On a l'adresse éthereum du votant , l'ID de la proposition pour laquelle l'électeur à voter et la date en timestamp. Evidemment le vote doit être terminé pour ne pas être influencé par les autres au moment de voter<br/>
-![Vote history](ressources/images/voteHistory.PNG)
+![Vote history](smartContract/ressources//images/voteHistory.PNG)
 
 # Fonctionnalités BONUS
 
 - Sujet de base : Le owner peut déterminer un sujet au contrat de vote<br/>
-![Subject](ressources/images/subject.PNG)
+![Subject](smartContract/ressources//images/subject.PNG)
   
 - Retrait du droit de vote : L'administrateur peut retirer le droit de vote à un électeur.<br/>
-![Revoke rights](ressources/images/revokeRights.PNG)
+![Revoke rights](smartContract/ressources//images/revokeRights.PNG)
 
 - Limitation des votes : Limite le nombre de propositions pour lesquelles un électeur peut voter, afin d'éviter des votes excessifs. Un électeur peut voter que pour 1 seule proposition.<br/>
-![Error already vote](ressources/images/alreadyVote.PNG)
+![Error already vote](smartContract/ressources//images/alreadyVote.PNG)
 
 - Restriction de vote : Un électeur ne peut pas voter pour l'une de ses propres propositions. Cela permet d'éviter que tout le monde vote pour lui même<br/>
-![Error vote for his own proposal](ressources/images/errorVoteForHisOwnProposal.PNG)
+![Error vote for his own proposal](smartContract/ressources//images/errorVoteForHisOwnProposal.PNG)
 
 - Système de récompenses : La personne qui a soumis la proposition gagnante gagne 10 Voting token (VTK). Un token spécifique aux votes. On peut imaginer que l'organisation peut échanger ces tokens par la suite contre des avantages...
 Pour cela j'ai crée un contrat VotingToken<br/>
-![Winner rewards](ressources/images/winnerRewards.PNG)
+![Winner rewards](smartContract/ressources//images/winnerRewards.PNG)
 
 # Sample Hardhat Project
 
