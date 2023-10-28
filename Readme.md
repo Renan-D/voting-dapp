@@ -6,6 +6,7 @@ https://github.com/Renan-D/voting-dapp.git
 
 https://www.youtube.com/watch?v=8xGLZjmCZIA
 
+Note : Elle dure 8 minutes alors je conseille de la regarder en x2 
 # Les contrats 
 
 Les contrats sont dans le dossier smartContract/contracts
