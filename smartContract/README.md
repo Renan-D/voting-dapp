@@ -8,59 +8,59 @@
 
 # Fonctionnalités de base 
 
-- Celui qui déploie le contrat devient Owner du contrat
+- Celui qui déploie le contrat devient Owner du contrat<br/>
 ![Deploy](ressources/images/deploy.PNG)
 
-- Inscription des électeurs : L'administrateur (Owner) peut inscrire les électeurs sur une liste blanche en utilisant leur adresse Ethereum.
+- Inscription des électeurs : L'administrateur (Owner) peut inscrire les électeurs sur une liste blanche en utilisant leur adresse Ethereum.<br/>
 ![Register voter](ressources/images/registerVoter.PNG)
 
-- Session d'enregistrement des propositions : L'administrateur peut démarrer une session d'enregistrement des propositions.
+- Session d'enregistrement des propositions : L'administrateur peut démarrer une session d'enregistrement des propositions.<br/>
 ![Start proposal](ressources/images/StartProposal.PNG)
 
-- Enregistrement des propositions : Les électeurs inscrits peuvent soumettre leurs propositions pendant la session d'enregistrement des propositions.
+- Enregistrement des propositions : Les électeurs inscrits peuvent soumettre leurs propositions pendant la session d'enregistrement des propositions.<br/>
 ![Submit proposal](ressources/images/submitProposal.PNG)
 
-- Clôture de la session d'enregistrement des propositions : L'administrateur peut mettre fin à la session d'enregistrement des propositions.
+- Clôture de la session d'enregistrement des propositions : L'administrateur peut mettre fin à la session d'enregistrement des propositions.<br/>
 ![End proposal](ressources/images/endProposal.PNG)
 
-- Session de vote : L'administrateur peut lancer une session de vote.
+- Session de vote : L'administrateur peut lancer une session de vote.<br/>
 ![Start voting](ressources/images/startVoting.PNG)
 
-- Consultation des propositions : Les électeurs peuvent consulter les propositions et leur ID qui seront nécesaires pour le vote (Par exemple, ici PHP : 0 , Java : 1)
+- Consultation des propositions : Les électeurs peuvent consulter les propositions et leur ID qui seront nécesaires pour le vote (Par exemple, ici PHP : 0 , Java : 1)<br/>
 ![Get all proposals](ressources/images/getAllProposal.PNG)
   
-- Vote : Les électeurs inscrits peuvent voter pour leurs propositions préférées. (avec l'id de la proposition donc ici l'électeur vote pour PHP)
+- Vote : Les électeurs inscrits peuvent voter pour leurs propositions préférées. (avec l'id de la proposition donc ici l'électeur vote pour PHP)<br/>
 ![Vote](ressources/images/vote.PNG)
 
-- Clôture de la session de vote : L'administrateur peut mettre fin à la session de vote.
+- Clôture de la session de vote : L'administrateur peut mettre fin à la session de vote.<br/>
 ![End Voting](ressources/images/endVoting.PNG)
 
-- Comptabilisation des votes : L'administrateur peut comptabiliser les votes pour déterminer la proposition gagnante.
+- Comptabilisation des votes : L'administrateur peut comptabiliser les votes pour déterminer la proposition gagnante.<br/>
 ![Tally votes](ressources/images/tallyVote.PNG)
 
-- Consultation des résultats : Tout le monde peut consulter la proposition gagnante (Son ID ou alors sa description).
+- Consultation des résultats : Tout le monde peut consulter la proposition gagnante (Son ID ou alors sa description).<br/>
 ![Winning proposal ID](ressources/images/winningProposalID.PNG)
 ![Winning proposal description](ressources/images/winningProposalDescription.PNG)
 
-- Chaque votant peut consulter les votes des autres : On a l'adresse éthereum du votant , l'ID de la proposition pour laquelle l'électeur à voter et la date en timestamp. Evidemment le vote doit être terminé pour ne pas être influencé par les autres au moment de voter
+- Chaque votant peut consulter les votes des autres : On a l'adresse éthereum du votant , l'ID de la proposition pour laquelle l'électeur à voter et la date en timestamp. Evidemment le vote doit être terminé pour ne pas être influencé par les autres au moment de voter<br/>
 ![Vote history](ressources/images/voteHistory.PNG)
 
 # Fonctionnalités BONUS
 
-- Sujet de base : Le owner peut déterminer un sujet au contrat de vote
+- Sujet de base : Le owner peut déterminer un sujet au contrat de vote<br/>
 ![Subject](ressources/images/subject.PNG)
   
-- Retrait du droit de vote : L'administrateur peut retirer le droit de vote à un électeur.
+- Retrait du droit de vote : L'administrateur peut retirer le droit de vote à un électeur.<br/>
 ![Revoke rights](ressources/images/revokeRights.PNG)
 
-- Limitation des votes : Limite le nombre de propositions pour lesquelles un électeur peut voter, afin d'éviter des votes excessifs. Un électeur peut voter que pour 1 seule proposition.
+- Limitation des votes : Limite le nombre de propositions pour lesquelles un électeur peut voter, afin d'éviter des votes excessifs. Un électeur peut voter que pour 1 seule proposition.<br/>
 ![Error already vote](ressources/images/alreadyVote.PNG)
 
-- Restriction de vote : Un électeur ne peut pas voter pour l'une de ses propres propositions. Cela permet d'éviter que tout le monde vote pour lui même
+- Restriction de vote : Un électeur ne peut pas voter pour l'une de ses propres propositions. Cela permet d'éviter que tout le monde vote pour lui même<br/>
 ![Error vote for his own proposal](ressources/images/errorVoteForHisOwnProposal.PNG)
 
 - Système de récompenses : La personne qui a soumis la proposition gagnante gagne 10 Voting token (VTK). Un token spécifique aux votes. On peut imaginer que l'organisation peut échanger ces tokens par la suite contre des avantages...
-Pour cela j'ai crée un contract VotingToken
+Pour cela j'ai crée un contract VotingToken<br/>
 ![Winner rewards](ressources/images/winnerRewards.PNG)
 
 # Sample Hardhat Project
