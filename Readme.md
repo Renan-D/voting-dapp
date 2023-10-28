@@ -12,7 +12,7 @@ Les contrats sont dans le dossier smartContract/contracts
 
 2 contrats :
 - Voting.sol
-- VotingToken.sol
+- VotingToken.sol 
   
 # Tester le contrat sur remix 
 
