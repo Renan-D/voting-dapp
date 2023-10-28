@@ -1,3 +1,11 @@
+# Lien Github
+
+https://github.com/Renan-D/voting-dapp.git
+
+# Lien vidéo de présentation des fonctionnalités sur Remix 
+
+https://www.youtube.com/watch?v=8xGLZjmCZIA
+
 # Tester le contrat sur remix 
 
 - Rendez-vous sur https://remix.ethereum.org/
@@ -60,12 +68,18 @@
 ![Error vote for his own proposal](ressources/images/errorVoteForHisOwnProposal.PNG)
 
 - Système de récompenses : La personne qui a soumis la proposition gagnante gagne 10 Voting token (VTK). Un token spécifique aux votes. On peut imaginer que l'organisation peut échanger ces tokens par la suite contre des avantages...
-Pour cela j'ai crée un contract VotingToken<br/>
+Pour cela j'ai crée un contrat VotingToken<br/>
 ![Winner rewards](ressources/images/winnerRewards.PNG)
 
 # Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+
+# Front End DAPP
+
+Malheureusement je n'ai pas de front end, j'ai tenté de faire mon front en React mais j'ai eu des complications avec des dépendances ethers etc. Finalement, j'abandonne et je prefere m'intéresser aux aux fonctionnalités supplémentaires comme la récompense du gagnant qui m'a pris pas mal de temps (Pour lire et comprendre la documentation de oppenZeppelin notamment sur ERC20) </br>
+
+# Readme hardhat de base
 
 Try running some of the following tasks:
 
